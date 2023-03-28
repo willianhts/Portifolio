@@ -1,14 +1,28 @@
-@charset "utf-8"
+@charset "utf-8";
 
-#container {
+* {
+    color: white;
+}    
+body {
+    background-color: black;
+    
+}
+#box {
     height: 500px;
-    width: 800px;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.336);
+    width: 500px;
+    margin: auto;
+    background-color:#945522;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
-#conteudo {
-    height: 300px;
-    width: 600px;
-    background-color: rgba(70, 22, 102, 0.356);
+#content {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: #FFBA82;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
