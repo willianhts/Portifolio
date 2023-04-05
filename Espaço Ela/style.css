@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-:root {
+:root {/*Estabelecendo cores padrão da página*/
     --cor1: #7A6C51;
     --cor2: #ABC7B8;
     --cor3: #C8B798;
@@ -8,6 +8,59 @@
     --cor5: #6D577A;
 }
 
-* {
+* {/*Configurações Universais da página*/
     margin: 0px;
+    padding: 0px;
 }
+
+body {
+    background-color: var(--cor3);
+    min-width: 320px;
+    max-width: 2560px;
+}
+
+/*Formatação Cabeçalho*/
+header {
+    background-color: #ffedcb;
+    min-height: 150px;
+    padding-top: 10px;
+}
+
+header picture img {
+    display: block;
+    margin: auto;
+}
+
+/*Formatação Menu*/
+header nav {
+    background-color: var(--cor1);
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color .5s;
+}
+
+header nav ul li:hover {
+    background-color: var(--cor3);
+}
+
+/*Formatação texto menu*/
+li > a {
+    transition: color .5s;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ li:hover > a {
+    color: var(--cor1);
+    
+ }
