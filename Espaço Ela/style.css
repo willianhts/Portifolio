@@ -14,6 +14,7 @@
     margin: 0px;
     padding: 0px;
     border: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
 }
 
 body {
@@ -39,6 +40,7 @@ header {
 .menu {
     text-align: center;
     background-color: var(--cor1);
+    margin-top: 10px;
 }
 
 /*Formatação botões do menu*/
@@ -65,6 +67,43 @@ header {
     color: var(--cor2);
 }
 
+/*Formatação textos e botaõ*/
 h1.text {
-    font: normal normal 3em 'Rochester', cursive;
+    font: normal normal 4em 'Rochester', cursive;
+}
+
+h2.text {
+    font: normal normal 2em 'Raleway', sans-serif;
+}
+
+.botao {
+    background-color: var(--cor2);
+    padding: 20px 25px;
+    font: normal bold 1.5em 'Noto Serif Malayalam', serif;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    border-radius: 40px;
+}
+
+/*Formatação texto e imagem em section*/
+section {
+    max-width: 70%;
+    height: 450px;
+    margin: auto;
+}
+
+.esquerda {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.direita {
+    overflow: hidden;
+    height: 100%;
 }
