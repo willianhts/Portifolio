@@ -23,15 +23,18 @@
 
     <section>
         <div class="esquerda">
-            <p>
-                <h1 class="text">Sem pelos, sem preocupação.</h1>
-                <h2 class="text">Invista em você!</h2>
-            </p>
+            <p class="text">
+                <h1 id="text1">Sem pelos, sem preocupação</h1>
+                <h2 id="text2">Invista em você!</h2>
             <a href="#"><button class="botao">Agende agora um horário</button></a>
+            </p>
         </div>
         <aside class="direita">
             <picture>
-                <img class="imagem-g" src="images/foto_2_450_sfundo.png" alt="Foto 1 - Mulher com axilas depiladas">
+                <source media="(max-width:400px )" srcset="images/foto_2_200.png" type="image/png">
+                <source media="(max-width:500px)" srcset="images/foto_2_300.png" type="image/png">
+                <source media="(max-width:850px)" srcset="images/foto_2_400.png" type="image/png">
+                <img class="imagem-g" src="images/foto_2_600.png" alt="Foto 1 - Mulher com axilas depiladas">
             </picture>
         </aside>
     </section>
