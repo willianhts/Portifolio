@@ -69,20 +69,31 @@ header {
 
 /*Formatação imagem, textos e botão*/
 section {
-    height: 800px;
+    width: 100%;
     margin: auto;
 }
 
 .esquerda {
     float: left;
-    height: 100%;
     width: 50%;
-    background-color: var(--cor4);
 }
 
 .direita {
+    display: block;
     overflow: hidden;
     height: 100%;
     width: 50%;
-    background-color: var(--cor5);
+}
+
+#text1 {
+    font: normal normal 500% 'Rochester', cursive;
+    text-align: right;
+    padding: 15% 5% 10% 0;
+    line-height: 1em
+}
+
+#text2 {
+    font: normal bold 250% 'Noto Serif Malayalam', serif;
+    text-align: right;
+    padding-right: 5%;
 }
