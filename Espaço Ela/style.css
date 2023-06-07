@@ -72,28 +72,3 @@ section {
     width: 100%;
     margin: auto;
 }
-
-.esquerda {
-    float: left;
-    width: 50%;
-}
-
-.direita {
-    display: block;
-    overflow: hidden;
-    height: 100%;
-    width: 50%;
-}
-
-#text1 {
-    font: normal normal 500% 'Rochester', cursive;
-    text-align: right;
-    padding: 15% 5% 10% 0;
-    line-height: 1em
-}
-
-#text2 {
-    font: normal bold 250% 'Noto Serif Malayalam', serif;
-    text-align: right;
-    padding-right: 5%;
-}
