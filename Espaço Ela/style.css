@@ -5,7 +5,7 @@
 :root {/*Estabelecendo cores padrão da página*/
     --cor1: #7A6C51;
     --cor2: #ABC7B8;
-    --cor3: #C8B798;
+    --cor3: #fdf1d9;
     --cor4: #AE83C7;
     --cor5: #6D577A;
 }
@@ -25,7 +25,7 @@ body {
 
 /*Formatação Cabeçalho*/
 header {
-    background-color: #fdf1d9;
+    background-color: var(--cor3);
     min-height: 150px;
     padding-top: 10px;
 }
@@ -52,10 +52,6 @@ header {
     transition: .3s;
 }
 
-.menu-item:hover {
-    background-color: var(--cor3);
-}
-
 /*Formatação texto menu*/
 .menu-text {
     text-decoration: none;
@@ -63,9 +59,18 @@ header {
     font: normal bold .9em 'Raleway', sans-serif;
 }
 
-.menu-text:active {
+.menu-item:hover {
+    background-color: var(--cor3);
+}
+
+.menu-item:hover .menu-text {
+    color: var(--cor1);
+}
+
+.menu-item:active .menu-text {
     color: var(--cor2);
 }
+
 
 /*Formatação imagem, textos e botão*/
 section {
