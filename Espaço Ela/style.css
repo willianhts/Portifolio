@@ -77,3 +77,55 @@ section {
     margin: auto;
     width: 100%;
 }
+
+/*Formatação rodapé*/
+footer{
+    background-color: var(--cor1);
+    margin: auto;
+    width: 100%;
+    max-height: 10%;
+    font: normal lighter .85em 'open sans', sans-serif;
+}
+
+/*Configurando legenda oculta*/
+
+.ocultar {
+    display: none;
+}
+
+footer:hover .ocultar{
+    display: inline-block;
+}
+
+.legenda {
+    color: white;
+    display: inline-block;
+    padding: 5px 10px 5px 5px;
+}
+
+.legenda a {
+    text-decoration: none;
+    color: white;
+}
+
+.legenda a:hover {
+    color: var(--cor2);
+}
+
+.legenda a:active {
+    color: var(--cor3);
+}
+
+.mostrar {
+    color: white;
+    padding: 5px 47%;
+}
+
+.mostrar a{
+    text-decoration: none;
+    color: white;
+}
+
+.mostrar a:hover {
+    color: var(--cor2);
+}
