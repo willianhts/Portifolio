@@ -89,16 +89,16 @@ section {
 /*Formatação rodapé*/
 footer{
     background-color: var(--cor1);
-    margin: auto;
     width: 100%;
-    height: 10%;
     font: normal lighter .85em 'open sans', sans-serif;
+    text-align: center;
 }
 
 /*Configurando legenda oculta*/
 
 .ocultar {
     display: none;
+    text-align: right;
 }
 
 footer:hover .ocultar{
@@ -126,8 +126,7 @@ footer:hover .ocultar{
 
 .mostrar {
     color: white;
-    padding: 5px 47%;
-    text-align: justify;
+    padding: 5px;
 }
 
 .mostrar a{
@@ -137,4 +136,26 @@ footer:hover .ocultar{
 
 .mostrar a:hover {
     color: var(--cor2);
+}
+
+/*Formatação imagens no aside*/
+aside{
+    text-align: center;
+}
+
+aside picture{
+    display: inline-block;
+}
+
+aside> picture > img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
+    margin: 35px 10px 0px 10px;
+}
+/*Formatação legendas das imagens em aside*/
+
+aside p {
+    font: normal normal .98em 'Raleway', sans-serif;
+    text-align: center;
+    padding: 10px;
 }
