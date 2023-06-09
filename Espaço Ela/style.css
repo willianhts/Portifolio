@@ -20,28 +20,16 @@
 
 body {
     background-color: var(--cor3);
-    min-width: 320px;
-    max-width: 2560px;
 }
 
 /*Formatação Cabeçalho*/
 header {
-    background-color: var(--cor3);
-    min-height: 150px;
-    padding-top: 10px;
-}
-
-/*Logo no Header*/
-.imagem {
-    display: block;
-    margin: auto;
+    text-align: center;
 }
 
 /*Formatação barra de menu*/
 .menu {
-    text-align: center;
     background-color: var(--cor1);
-    margin-top: 10px;
 }
 
 /*Formatação botões do menu*/
@@ -59,103 +47,88 @@ header {
     color: whitesmoke;
     font: normal bold .9em 'Raleway', sans-serif;
 }
-
 .menu-item:hover {
     background-color: var(--cor3);
 }
-
 .menu-item:hover .menu-text {
     color: var(--cor1);
 }
-
 .menu-item:active .menu-text {
     color: var(--cor2);
 }
 
-
 /*Formatação imagem, textos e botão*/
 section {
-    width: 100%;
-    margin: auto;
     background-color: var(--cor6);
 }
-
 .imagem-g {
     display: block;
     margin: auto;
     width: 90%;
 }
 
-/*Formatação rodapé*/
-footer{
-    background-color: var(--cor1);
-    width: 100%;
-    font: normal lighter .85em 'open sans', sans-serif;
-    text-align: center;
-}
-
-/*Configurando legenda oculta*/
-
-.ocultar {
-    display: none;
-    text-align: right;
-}
-
-footer:hover .ocultar{
-    display: block;
-}
-
-.legenda {
-    color: white;
-    padding: 5px;
-}
-
-.legenda a {
-    text-decoration: none;
-    color: white;
-    margin: auto;
-}
-
-.legenda a:hover {
-    color: var(--cor2);
-}
-
-.legenda a:active {
-    color: var(--cor3);
-}
-
-.mostrar {
-    color: white;
-    padding: 5px;
-}
-
-.mostrar a{
-    text-decoration: none;
-    color: white;
-}
-
-.mostrar a:hover {
-    color: var(--cor2);
-}
-
 /*Formatação imagens no aside*/
 aside{
     text-align: center;
 }
-
 aside picture{
     display: inline-block;
 }
-
 aside> picture > img {
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
     margin: 35px 10px 0px 10px;
 }
-/*Formatação legendas das imagens em aside*/
 
+/*Formatação legendas das imagens em aside*/
 aside p {
     font: normal normal .98em 'Raleway', sans-serif;
     text-align: center;
     padding: 10px;
+}
+
+/*Formatação rodapé*/
+footer{
+    background-color: var(--cor1);
+    font: normal lighter .85em 'open sans', sans-serif;
+    text-align: center;
+}
+
+/*Configurando legenda oculta*/
+.ocultar {
+    display: none;
+    text-align: right;
+}
+footer:hover .ocultar{
+    display: block;
+}
+
+/*Formatação texto oculto menção aos autores*/
+.legenda {
+    color: white;
+    padding: 5px;
+}
+.legenda a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+.legenda a:hover {
+    color: var(--cor2);
+}
+.legenda a:active {
+    color: var(--cor3);
+}
+
+/*Formatação texto a mostra menção aos autores*/
+.mostrar {
+    color: white;
+    padding: 5px;
+}
+.mostrar a{
+    text-decoration: none;
+    color: white;
+}
+.mostrar a:hover {
+    color: var(--cor2);
 }
