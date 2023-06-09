@@ -60,6 +60,7 @@ section {
     border-radius: 0px 0px 3px 3px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
     text-align: center;
+    position: relative;
 }
 .imagem-section {
     display: block;
@@ -68,17 +69,18 @@ section {
 }
 
 /*Configuração Botão*/
-.button {
-    display: inline-block;
-    padding: 7px 17px;
-    margin: 2px 5px;
-    border-radius: 20px;
-    transition: .3s;
+.botao {
+    background-color: var(--cor4);
     text-decoration: none;
     color: whitesmoke;
-    font: normal bold .9em 'Raleway', sans-serif;
+    font: normal bold 2em 'Raleway', sans-serif;
+    padding: 5px 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 10%;
+    top: 75%;
 }
-.button:hover {
+.botao:hover {
     background-color: var(--cor5);
 }
 
