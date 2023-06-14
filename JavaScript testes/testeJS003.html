@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt--br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+</head>
+<body>
+    <!--Formulário para a captação dos dados-->
+    <form name="formInscricao" action="" method="post" >
+        Nome: <input type="text" name="f_nome"><br/>
+        Celular: <input type="tel" name="f_phone"><br/>
+        Dia: <input type="date" name="f_data"><br>
+        Horário: <input type="time" name="f_horario"><br>
+        <input type="button" value="Agendar" name="bt_agendar" onclick="agendamento()">
+        <input type="reset" value="Cancelar">
+    </form>
+    
+    <!--Definição função Agendamento()-->
+    <script lang="javascript">
+        <!--
+            /*Objetivo: Captar os dados de clientes e exibir o agendamento confirmado com todos esses dados*/
+
+            //Definição de variáveis
+            var js_nome;
+            var js_phone;
+            var js_data;
+            var js_horario;
+            var js_agendamento
+
+            function agendamento() {
+                //Entrada de dados
+                js_nome = formInscricao.f_nome.value;
+                js_phone = formInscricao.f_phone.value;
+                js_data = formInscricao.f_data.value;
+                js_horario = formInscricao.f_horario.value;
+                
+                //Processamento de dados
+                js_agendamento = js_nome + ' ' + js_phone + ' ' + js_data + ' ' + js_horario;
+
+                //Saída de dados
+                document.write('Dados do Agendamento' + '\n' + js_agendamento);
+            }
+            //-->
+
+    </script>
+</body>
+</html>
