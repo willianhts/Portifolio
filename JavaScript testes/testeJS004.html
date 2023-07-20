@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando condições</title>
+</head>
+<body>
+    <!--Formulário para captação de valores-->
+    <form name="form_valores" action="" method="post">
+        <input type="number" name="valor_1" class="caixa_numero">
+        <input type="number" name="valor_2" class="caixa_numero">
+        <input type="button" value="Enviar" class="botao_enviar" onclick="envio()">
+        <input type="reset" value="Cancelar">
+    </form>
+    <!--Descrição do algoritmo-->
+    <script lang="javascript">
+        /*Objetivo: Captar dois números diferentes e mostra-los no documento em sequencia crescente*/
+
+        //Declaração de variáveis
+        var num_1;
+        var num_2;
+        var num_3;
+
+        //Entrada de dados
+        num_1 = form_valores.valor_1.value;
+        num_2 = form_valores.valor_2.value;
+
+        //Saída de dados sem processamento da condição
+        document.write('1º Número: ' + num_1);
+        document.write('<br>2º Número: ' + num_2);
+        
+        //Processamento de dados
+        if (num_1 > num_2){
+           num_3=num_1
+           num_1=num_2
+           num_2=num_3
+        }
+
+        //Saída de dados com processamento da condição
+        document.write('<p><b>Números em Ordem Crescente:</b>');
+        document.write('<br>1º Número: ' + num_1);
+        document.write('<br> 2º Número: ' + num_2);
+    </script>
+</body>
+</html>
