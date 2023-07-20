@@ -18,29 +18,30 @@
         /*Objetivo: Captar dois números diferentes e mostra-los no documento em sequencia crescente*/
 
         //Declaração de variáveis
-        var num_1;
-        var num_2;
-        var num_3;
+        var js_num1;
+        var js_num2;
+        var js_num3;
 
-        //Entrada de dados
-        num_1 = form_valores.valor_1.value;
-        num_2 = form_valores.valor_2.value;
-
-        //Saída de dados sem processamento da condição
-        document.write('1º Número: ' + num_1);
-        document.write('<br>2º Número: ' + num_2);
+        function envio() {
+            //Entrada de dados
+            js_num1=form_valores.valor_1.value;
+            js_num2=form_valores.valor_2.value;
         
-        //Processamento de dados
-        if (num_1 > num_2){
-           num_3=num_1
-           num_1=num_2
-           num_2=num_3
+            //Saída de dados sem processamento da condição
+            document.write('1º Número: ' + js_num1);
+            document.write('<br>2º Número: ' + js_num2);
+            
+            //Processamento de dados
+            if (js_num1 > js_num2){
+               js_num3=js_num1
+               js_num1=js_num2
+               js_num2=js_num3
+               //Saída de dados com processamento da condição
+               document.write('<p><b>Números em Ordem Crescente:</b>');
+               document.write('<br>1º Número: ' + js_num1);
+               document.write('<br> 2º Número: ' + js_num2);
+            } 
         }
-
-        //Saída de dados com processamento da condição
-        document.write('<p><b>Números em Ordem Crescente:</b>');
-        document.write('<br>1º Número: ' + num_1);
-        document.write('<br> 2º Número: ' + num_2);
     </script>
 </body>
 </html>
